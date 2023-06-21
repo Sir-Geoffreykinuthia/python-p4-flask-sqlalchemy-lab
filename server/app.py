@@ -23,11 +23,11 @@ def animal_by_id(id):
 
     return f'''
      <ul>
-        <li>ID: {animal.id}</li>
-        <li>Name: {animal.name}</li>
-        <li>Species: {animal.species}</li>
-        <li>Zookeeper: {animal.zookeeper_id}</li>
-        <Li>Enclosure: {animal.enclosure_id}</li>
+        <ul>ID: {animal.id}</ul>
+        <ul>Name: {animal.name}</ul>
+        <ul>Species: {animal.species}</ul>
+        <ul>Zookeeper: {animal.zookeeper_id}</ul>
+        <ul>Enclosure: {animal.enclosure_id}</ul>
      </ul> 
     '''
 
@@ -40,10 +40,9 @@ def zookeeper_by_id(id):
         animals += f'<ul>Animal: {animal.name}</ul>'
     return f'''
         <ul>
-        <li>ID: {zookeeper.id}</li>
-        <li>Name: {zookeeper.name}</li>
-        <li>Birthday: {zookeeper.birthday}</li>
-        </ul> 
+        <ul>ID: {zookeeper.id}</ul>
+        <ul>Name: {zookeeper.name}</ul>
+        <ul>Birthday: {zookeeper.birthday}</ul>
         <ul>
         {animals}
         </ul>
@@ -58,10 +57,10 @@ def enclosure_by_id(id):
         animals += f'<ul>Animal: {animal.name}</ul>'
     return f'''
         <ul>
-        <li>ID: {enclosure.id}</li>
-        <li>Environment: {enclosure.environment}</li>
-        <li>Open to visitors: {enclosure.open_to_visitors}</li>
-        </ul>
+        <ul>ID: {enclosure.id}</ul>
+        <ul>Environment: {enclosure.environment}</ul>
+        <ul>Open to visitors: {enclosure.open_to_visitors}</ul>
+        </iul>
         <ul>
         {animals}
         </ul>
